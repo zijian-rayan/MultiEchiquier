@@ -1,0 +1,478 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÖÐÎÄ(ÖÐ»ªÈËÃñ¹²ºÍ¹ú) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "Clic droit"
+    BEGIN
+        MENUITEM "Pi¨¨ce noire",                 ID_NOIRE
+        MENUITEM "Piece blanche",               ID_BLANCHE
+    END
+END
+
+#endif    // ÖÐÎÄ(ÖÐ»ªÈËÃñ¹²ºÍ¹ú) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// ·¨Óï(·¨¹ú) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Affichage"
+    BEGIN
+        POPUP "Barres d'outils et &fenêtres d'ancrage"
+        BEGIN
+            MENUITEM "<espace réservé>",            ID_VIEW_TOOLBAR
+        END
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "À &propos de MultiEchiquier...", ID_APP_ABOUT
+    END
+END
+
+IDR_MultiEchiquierTYPE MENU 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM "S&ave img",                   32784
+        MENUITEM "&Paramètres",                 32785
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "C&opier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Co&ller\tCtrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&Affichage"
+    BEGIN
+        POPUP "Barres d'outils et &fenêtres d'ancrage"
+        BEGIN
+            MENUITEM "<espace réservé>",            ID_VIEW_TOOLBAR
+        END
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+        POPUP "&Taille"
+        BEGIN
+            MENUITEM "&4x4",                        ID_TAILLE_4X4
+            MENUITEM "&6x6",                        ID_TAILLE_6X6
+            MENUITEM "&8x8",                        ID_TAILLE_8X8
+            MENUITEM "&10x10",                      ID_TAILLE_10X10
+            MENUITEM "1&2x12",                      ID_TAILLE_12X12
+        END
+        POPUP "&Couleur"
+        BEGIN
+            MENUITEM "&Rouge && Noire",             ID_PAIRE1
+            MENUITEM "&Nore && Vert",               ID_PAIRE2
+            MENUITEM "&Vert && Jaunne",             ID_PAIRE3
+            MENUITEM SEPARATOR
+            MENUITEM "Cases &Paires...",            ID_COULEUR_CASESPAIRES
+            MENUITEM "Cases &impaires...",          ID_COULEUR_CASESIMPAIRES
+        END
+        MENUITEM "&Visible",                    ID_VISIBLE
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom in",                     ID_AFFICHAGE_ZOOMIN
+        MENUITEM "Zoom out",                    ID_AFFICHAGE_ZOOMOUT
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "&À propos de MultiEchiquier...", ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "Edition"
+    BEGIN
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "C&opier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Co&ller\tCtrl+V",             ID_EDIT_PASTE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MultiEchiquier.rc2""  // ressources non modifi?s par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""          // Composants standard\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.FRA\\afxprint.rc""                // ressources impression/aper? avant impression\r\n"
+    "#include ""l.FRA\\afxribbon.rc""               // Ressources de barre de contr?es et de ruban MFC\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MultiEchiquier.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_PAIRE1
+    BUTTON      ID_PAIRE2
+    BUTTON      ID_PAIRE3
+    BUTTON      ID_VISIBLE
+    BUTTON      ID_TAILLE_4X4
+    BUTTON      ID_TAILLE_6X6
+    BUTTON      ID_TAILLE_8X8
+    BUTTON      ID_TAILLE_10X10
+    BUTTON      ID_TAILLE_12X12
+    BUTTON      ID_AFFICHAGE_ZOOMIN
+    BUTTON      ID_AFFICHAGE_ZOOMOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "P",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos de MultiEchiquier"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MultiEchiquier, version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2019",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04e4"
+        BEGIN
+            VALUE "CompanyName", "TODO : <????designer>"
+            VALUE "FileDescription", "TODO : <Description de fichier>"
+            VALUE "FileVersion", "2.0.0.1"
+            VALUE "InternalName", "MultiEchiquier.exe"
+            VALUE "LegalCopyright", "TODO : (c) <Nom de la société>. Tous droits réservés."
+            VALUE "OriginalFilename", "MultiEchiquier.exe"
+            VALUE "ProductName", "TODO : <Nom du produit>"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Échec de l'initialisation d'OLE. Assurez-vous que vous utilisez la bonne version des bibliothèques OLE."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "MultiEchiquier"
+    IDR_MultiEchiquierTYPE  "\nMultiEchiquier\nMultiEchiquier"
+    IDS_WINDOWS_MANAGER     "&Fenêtres..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MultiEchiquier"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations concernant le programme, le numéro de version et le copyright\nÀ propos de"
+    ID_APP_EXIT             "Quitte l'application et demande si les documents doivent être enregistrés\nQuitter"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Bascule vers le volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Bascule vers le volet de fenêtre précédent\nVolet précédent"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Réorganise les icônes en bas de la fenêtre\nRéorganiser les icônes"
+    ID_WINDOW_CASCADE       "Réorganise les fenêtres de façon à ce qu'elles se superposent\nCascade"
+    ID_WINDOW_TILE_HORZ     "Réorganise les fenêtres en mosaïque de sorte qu'elles ne se superposent pas\nMosaïque"
+    ID_WINDOW_TILE_VERT     "Réorganise les fenêtres en mosaïque de sorte qu'elles ne se superposent pas\nMosaïque"
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en volets\nFractionner"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace un texte spécifié par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne la totalité du document\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Afficher ou masquer la barre d'état\nActiver/désactiver la barre d'état"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Affiche la fenêtre sous forme d'icône"
+    AFX_IDS_SCMAXIMIZE      "Affiche la fenêtre en plein écran"
+    AFX_IDS_SCNEXTWINDOW    "Bascule vers la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Bascule vers la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+    AFX_IDS_MDICHILD        "Active cette fenêtre"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "Volet 1"
+    IDS_STATUS_PANE2        "Volet 2"
+    IDS_TOOLBAR_STANDARD    "Standard"
+    IDS_TOOLBAR_CUSTOMIZE   "Personnaliser..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_MENU           "Edition"
+END
+
+#endif    // ·¨Óï(·¨¹ú) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#include "res\MultiEchiquier.rc2"  // ressources non modifi¨¦es par Microsoft Visual C++
+#include "l.FRA\afxres.rc"          // Composants standard
+#if !defined(_AFXDLL)
+#include "l.FRA\afxprint.rc"                // ressources impression/aper?u avant impression
+#include "l.FRA\afxribbon.rc"               // Ressources de barre de contr?les et de ruban MFC
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
